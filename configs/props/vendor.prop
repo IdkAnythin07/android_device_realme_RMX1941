@@ -170,7 +170,6 @@ ro.vendor.radio.max.multisim=dsds
 
 # Storage
 ro.vendor.mtk_emmc_support=1
-ro.vendor.mtk_f2fs_enable=0
 
 # SurfaceLinger
 debug.sf.disable_backpressure=1
