@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The Android Open Source Project 
+# Copyright (C) 2021 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,8 +24,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
-# Inherit some common LineageOS stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Superior OS stuff
+$(call inherit-product, vendor/superior/config/common_full_phone.mk)
 
 # Inherit from RMX1941 device makefile
 $(call inherit-product, device/realme/RMX1941/device.mk)
@@ -37,9 +37,16 @@ TARGET_SCREEN_WIDTH := 720
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 720
 
+# Superior
+BUILD_WITH_GAPPS := false
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+MAINTAINER := IdkAnythin07
+#SUPERIOR_GAPPS := full
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX1941
-PRODUCT_NAME := lineage_RMX1941
+PRODUCT_NAME := superior_RMX1941
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme C2
 PRODUCT_MANUFACTURER := realme
