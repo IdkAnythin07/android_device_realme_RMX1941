@@ -37,6 +37,11 @@ TARGET_SCREEN_WIDTH := 720
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 720
 
+# Octavi specials
+TARGET_USES_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+OCTAVI_DEVICE_MAINTAINER := IdkAnythin07
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX1941
 PRODUCT_NAME := octavi_RMX1941
@@ -57,6 +62,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
-
-# Octavi specials
-    TARGET_USES_BLUR := true
